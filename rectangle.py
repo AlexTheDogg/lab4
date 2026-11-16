@@ -9,6 +9,8 @@ def area(a,b):
     пример вызова:
     S = area(3,4) // функция вернет 12
     '''
+    if a < 0 or b < 0:
+        raise ValueError("Стороны прямоугольника не могут быть отрицательными")
     return a*b
 
 def perimeter(a,b):
@@ -19,6 +21,8 @@ def perimeter(a,b):
     пример вызова:
     P = perimeter(5,4) // функция вернет 18
     '''
+    if a < 0 or b < 0:
+        raise ValueError("Стороны прямоугольника не могут быть отрицательными")
     return (a+b)*2
 
 
