@@ -1,3 +1,6 @@
+import math
+
+
 def area(a,b):
     '''
     принимает два числа a и b.
@@ -17,3 +20,10 @@ def perimeter(a,b):
     P = perimeter(5,4) // функция вернет 18
     '''
     return (a+b)*2
+
+
+def diagonal(a, b):
+    """Возвращает длину диагонали прямоугольника со сторонами a, b >= 0."""
+    if a < 0 or b < 0:
+        raise ValueError("Стороны прямоугольника не могут быть отрицательными")
+    return math.hypot(a, b)

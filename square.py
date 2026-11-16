@@ -1,3 +1,5 @@
+import math
+
 
 def area(a):
     '''
@@ -19,3 +21,10 @@ def perimeter(a):
     P = perimeter(8) // вернет 32.
     '''
     return 4 * a
+
+
+def diagonal(a):
+    """Возвращает длину диагонали квадрата со стороной a >= 0."""
+    if a < 0:
+        raise ValueError("Сторона квадрата не может быть отрицательной")
+    return a * math.sqrt(2)
